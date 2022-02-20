@@ -15,11 +15,11 @@
     cursor: pointer;
   }
 }
-@media (max-width: 389px) {
+@media (max-width: 420px) {
   #container {
-    width: 100%;
+    width: 100vw;
   }
   .promotion-banner-static {
-    width: 80%;
+    width: 80vw;
   }
 }
