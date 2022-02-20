@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iFood Receitas</title>
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/UI/favicon.svg"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -30,7 +34,9 @@
   <body>
     <div id="container">
       <header class="header-recipes">
-        <i class="fa-solid fa-chevron-left"></i>
+        <a href="./index-market.html"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></a>
         <h1 class="header-recipes-title">Receitas</h1>
       </header>
       <aside class="main-menu-box">
@@ -66,29 +72,31 @@
           </div>
         </section>
         <section class="default-section">
-          <div class="section-recipe-box">
-            <img
-              class="recipe-logo-image"
-              src="./assets/img/recipes/bolo_de_chocolate.jpg"
-              alt=""
-              class="recipe-logo-image"
-            />
-            <div class="recipe-details">
-              <div class="recipe-title-box">
-                <p class="recipe-name">Bolo de chocolate</p>
-                <i class="fa-regular fa-heart"></i>
-              </div>
-              <div class="recipe-details-col">
-                <p class="recipe-rate">4.8</p>
-                <span class="category-item">Doces</span>
-                <p class="recipe-delivery-time">Preparo: 60-75 min</p>
-              </div>
-              <div class="recipe-coupon">
-                <i class="fa-solid fa-ticket"></i>
-                <p class="recipe-promotion">Cupom de R$20 em supermercado</p>
+          <a href="./market.html">
+            <div class="section-recipe-box">
+              <img
+                class="recipe-logo-image"
+                src="./assets/img/recipes/bolo_de_chocolate.jpg"
+                alt=""
+                class="recipe-logo-image"
+              />
+              <div class="recipe-details">
+                <div class="recipe-title-box">
+                  <p class="recipe-name">Bolo de chocolate</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="recipe-details-col">
+                  <p class="star-rate"><i class="fa-solid fa-star"></i> 4.8</p>
+                  <span class="category-item">Doces</span>
+                  <p class="recipe-delivery-time">Preparo: 60-75 min</p>
+                </div>
+                <div class="recipe-coupon">
+                  <i class="fa-solid fa-ticket"></i>
+                  <p class="recipe-promotion">Cupom de R$20 em supermercado</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <div class="section-recipe-box">
             <img
               class="recipe-logo-image"
@@ -102,7 +110,7 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div class="recipe-details-col">
-                <p class="recipe-rate">4.5</p>
+                <p class="star-rate"><i class="fa-solid fa-star"></i>4.5</p>
                 <span class="category-item">Lanches</span>
                 <p class="recipe-delivery-time">Preparo: 60-75 min</p>
               </div>
@@ -125,7 +133,7 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div class="recipe-details-col">
-                <p class="recipe-rate">4.9</p>
+                <p class="star-rate"><i class="fa-solid fa-star"></i>4.9</p>
                 <span class="category-item">Massas</span>
                 <p class="recipe-delivery-time">Preparo: 75-80 min</p>
               </div>

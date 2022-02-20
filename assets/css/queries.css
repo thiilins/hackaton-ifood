@@ -12,7 +12,4 @@
     background-color: var(--market);
     cursor: pointer;
   }
-  body {
-    margin: 0 3rem;
-  }
 }

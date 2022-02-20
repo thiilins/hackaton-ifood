@@ -30,23 +30,22 @@ h3 {
   text-transform: uppercase;
 }
 body {
-  max-height: 84.4rem;
-  margin: 0 auto;
-  background-image: url(../img/bg.jpg);
   background-size: cover;
   background-color: var(--primary);
   background-position: center center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #container {
   background-color: #ffff;
   width: 39rem;
   height: 100vh;
   overflow-y: scroll;
-  align-self: center;
   box-shadow: 0.6rem 0.6rem 1rem rgba(95, 10, 10, 0.986);
   scrollbar-width: thin;
   position: relative;
+  border-radius: 3rem;
 }
 #container::-webkit-scrollbar {
   width: 5px;
@@ -74,6 +73,13 @@ body {
   --coupon: #335b74;
   --best-price: #50a773;
   --best-price-bg: #f0f6ef;
+}
+.background-load {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
+  background-image: url(../img/);
+  z-index: 9999;
 }
 .section-title-box {
   display: flex;
@@ -137,10 +143,10 @@ section {
 }
 .top-category-menu {
   display: flex;
-  overflow: hidden;
   gap: 1rem;
   padding: 1rem 0;
 }
+
 .top-category-menu-item {
   display: flex;
   flex-direction: column;
@@ -149,6 +155,7 @@ section {
   cursor: pointer;
   transition: all 0.25s ease-in;
 }
+
 .top-category-menu-item:hover {
   transform: scale(1.05);
 }
@@ -196,7 +203,6 @@ section {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
   gap: 1rem;
 }
 .top-section-market-box {
@@ -464,7 +470,7 @@ section {
   color: var(--coupon);
   background-color: var(--coupon-bg);
 }
-.market-price.best {
+.market-price.best .market-promotion {
   background-color: var(--best-price-bg);
   color: var(--best-price);
 }
@@ -608,6 +614,9 @@ section {
   padding: 0.2rem 0.4rem;
   min-width: 3.5rem;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .descount-inicial {
   color: var(--grey-font-color);
@@ -697,10 +706,11 @@ section {
 .main-menu-box {
   position: fixed;
   bottom: 0;
-  width: 38rem;
+  width: 39rem;
   padding: 1rem;
   background: white;
-  z-index: 9999;
+  z-index: 999;
+  border-radius: 0 0 3rem 3rem;
 }
 .main-menu {
   display: flex;
@@ -755,4 +765,35 @@ section {
   background-image: url(../img/UI/more.svg);
   background-size: auto;
   background-repeat: no-repeat;
+}
+hr.space {
+  padding-bottom: 10rem;
+}
+
+#container.load {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container.load .load-logo {
+  width: 12rem;
+  height: 7rem;
+}
+
+.load-logo {
+  animation: opacityLogo 1.5s infinite alternate ease-in backwards;
+}
+
+@keyframes opacityLogo {
+  to {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  from {
+    opacity: 1;
+  }
+}
+.star-rate {
+  color: #e7a74e;
 }
