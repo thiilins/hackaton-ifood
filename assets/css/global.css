@@ -214,6 +214,7 @@ section {
   border-radius: 50%;
 }
 .market-name,
+.delivery-type-name,
 .recipe-name,
 .street-name,
 .delivery-price,
@@ -526,10 +527,20 @@ section {
   border-radius: 0.5rem;
   border: 1px solid rgba(113, 113, 113, 0.1);
 }
+.delivery-type-name {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-type-name .help-icon {
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../img/UI/help_icon.svg);
+  background-repeat: no-repeat;
+}
 .order-slide-status-box.active {
   border: 2px solid var(--primary);
 }
-.order-slide-status-box.active .market-name {
+.order-slide-status-box.active .delivery-type-name {
   color: red;
 }
 .delivery-price {
@@ -725,4 +736,19 @@ section {
   width: 6rem;
   height: auto;
   padding: 0 0.3rem;
+}
+.order-price-box {
+  position: relative;
+}
+.order-price-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -16px;
+  top: 10px;
+  min-width: 0.8rem;
+  min-height: 2rem;
+  background-image: url(../img/UI/more.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
 }
