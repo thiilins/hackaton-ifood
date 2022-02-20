@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Hack_ifood" />
+  <img src="./.github/cover.png" alt="Hack_ifood" />
 
 &#xa0;
 
@@ -33,15 +33,16 @@
 
 <hr> -->
 
-<!-- <p align="center">
+<p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
-  <a href="#sparkles-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#sparkles-durante-o-hack-ifood-implementamos">implementamos</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-pré-requisitos">Pré requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/thiilins" target="_blank">Autor</a>
-</p> -->
+   <a href="#raised_hand-participantes" target="_blank">Participantes</a> &#xa0; | &#xa0;
+   <a href="#memo-licença">Licença</a>
+
+</p>
 
 <br>
 
@@ -56,7 +57,9 @@ incluindo todos os ingredientes de uma receita ao carrinho com apenas 1 clique.
 Diferentemente de outros aplicativos, o iFood Receitas torna a experiência de compra
 mais prazerosa, rápida e com os melhores preços dos mercados.
 
-## :sparkles: Durante o Hack iFood conseguimos implementar:
+[Assista nosso Pitch](https://www.youtube.com/watch?v=eWLXuaZF-ho)
+
+## :sparkles: Durante o Hack iFood implementamos:
 
 - O código da interface do ifood produzida nas linguagens HTML, CSS e JS;
 - Lógica de animação das telas e slides;
@@ -65,14 +68,14 @@ mais prazerosa, rápida e com os melhores preços dos mercados.
 
 ## :rocket: Tecnologias
 
-### Durante o projeto, para prototipação e simulação da ideia foram utilizadas as tecnologias a seguir:
+#### Durante o projeto, para prototipação e simulação da ideia foram utilizadas as tecnologias a seguir:
 
     - HTML
     - CSS
     - JavaScript
     - SwiperJS
 
-### Futuro:
+#### Futuro:
 
     - ReactJS
     - React Native
@@ -97,16 +100,16 @@ $ git clone https://github.com/thiilins/hack_ifood
 
 # Entre na pasta
 $ cd hack_ifood
-
-# O app vai inicializar em <http://localhost:3000>
+#iniciar o live server
+# O app vai inicializar em <http://localhost:5500>
 ```
 
-## Participantes
+## :raised_hand: Participantes
 
-- Pedro Lucas Lopes Paraguai
-- Thiago Lins
-- Eloísa Schwertner
-- Luadyna Almeida
+- [Pedro Lucas Lopes Paraguai](https://github.com/PedroLucasLopes)
+- [Thiago Lins](https://github.com/thiilins)
+- [Eloísa Schwertner](https://www.linkedin.com/in/eloisa-schwertner/)
+- [Luadyna Almeida](https://www.linkedin.com/in/luadyna-almeida/)
 - Bruna Lopes
 
 ## :memo: Licença
