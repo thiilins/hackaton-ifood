@@ -8,10 +8,13 @@
   vertical-align: baseline;
 }
 html {
-  font-size: 62.5%;
+  font-size: 85.5%;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
   font-family: "Overpass", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -25,4 +28,511 @@ h2 {
 h3 {
   font-size: 2.6rem;
   text-transform: uppercase;
+}
+body {
+  max-width: 39rem;
+  max-height: 84.4rem;
+  margin: 0 auto;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-color: var(--primary);
+  display: flex;
+  padding: 1rem;
+}
+#container {
+  border-radius: 3rem;
+  background-color: #ffff;
+  height: 95vh;
+  overflow-y: scroll;
+  align-self: center;
+  /* border: 1.2rem solid rgb(0, 0, 0); */
+  box-shadow: 0.6rem 0.6rem 1rem rgba(95, 10, 10, 0.986);
+  scrollbar-width: thin;
+}
+#container::-webkit-scrollbar {
+  width: 5px;
+}
+:root {
+  --primary: #ea1d2c;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --market: #b6d048;
+  --restaurant: #ea1d2c;
+  --pharmacy: #f9879c;
+  --pet: #8c60c5;
+  --drinks: #f6d553;
+  --express: #ea1d2c;
+  --fair: #1e9a5b;
+  --recipes: #fe942d;
+  --text-size: 1.4rem;
+  --section-title-size: 1.8rem;
+  --store-name-size: 1.6rem;
+  --market-logo-size: 3.8rem;
+  --grey-font-color: #a6a6a6;
+  --font-color: #3e3e3e;
+  --grey-color: #717171;
+  --coupon-bg: #eff3f6;
+  --coupon: #335b74;
+  --best-price: #50a773;
+  --best-price-bg: #f0f6ef;
+}
+.section-title-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.section-subtitle {
+  color: var(--grey-font-color);
+}
+section {
+  padding: 1rem;
+}
+/* Header */
+.top-header {
+  background-color: #f7f7f7;
+  max-height: 8rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 39rem;
+  overflow: hidden;
+}
+.top-header-div-img-box {
+  max-width: 4rem;
+  border-radius: 50%;
+  background-color: var(--market);
+  cursor: pointer;
+}
+.header-div-img {
+  width: 100%;
+}
+.header-div-address-box {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.header-div-address-box span {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--grey-font-color);
+  font-size: 1rem;
+}
+
+.header-div-address-box p {
+  color: var(--font-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.header-nav-category,
+.main-menu-box {
+  display: none;
+}
+.top-category-menu ul {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  padding: 1rem;
+}
+.top-category-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.top-category-menu-item:hover {
+  transform: scale(1.05);
+}
+.top-category-menu-item::before {
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-width: 6.6rem;
+  min-height: 6.5rem;
+}
+.recipes-main::before {
+  background-image: url(/assets/img/navigation/recipes-main.png);
+}
+.express-main::before {
+  background-image: url(/assets/img/navigation/express-main.webp);
+}
+.pharmacy-main::before {
+  background-image: url(/assets/img/navigation/pharmacy-main.webp);
+}
+
+.fair-main::before {
+  background-image: url(/assets/img/navigation/fair-main.webp);
+}
+
+.drink-main::before {
+  background-image: url(/assets/img/navigation/drinks-main.webp);
+}
+.convenience-main::before {
+  background-image: url(/assets/img/navigation/convenience-main.webp);
+}
+
+.petshop-main::before {
+  background-image: url(/assets/img/navigation/pet-main.webp);
+}
+
+.top-category-menu-item a {
+  color: #717171;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/* Market */
+.top-section-market-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  gap: 1rem;
+}
+.top-section-market-box {
+  border: 1px solid rgba(206, 206, 206, 0.5);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.market-logo-image,
+.recipe-logo-image {
+  width: 5rem;
+  border-radius: 50%;
+}
+.market-name,
+.recipe-name,
+.street-name,
+.delivery-price {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.market-delivery-time,
+.recipe-delivery-time,
+.delivery-type,
+.Address-line-2 {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+.promotions-banners-section {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+.promotions-banners-image {
+  width: 33.2rem;
+  height: 15.4rem;
+  border-radius: 0.4rem;
+}
+.static-banner {
+  display: grid;
+  place-items: center;
+}
+.promotion-banner-static {
+  width: 33.2rem;
+  border-radius: 0.3rem;
+}
+
+.slide-section-markets-container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-market-box,
+.section-recipe-box {
+  padding: 1rem;
+  min-width: 70%;
+  max-width: 38rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+.market-details,
+.recipe-details {
+  display: flex;
+  height: 100%;
+  gap: 0.1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.recipe-details {
+  width: 100%;
+}
+.market-details-col,
+.recipe-details-col {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.default-section {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+/* footer */
+.footer-cities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-cities-title {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-cities-link {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 1.3rem;
+  color: var(--grey-font-color);
+}
+.footer-list li {
+  cursor: pointer;
+}
+
+.footer-title {
+  color: var(--black-color);
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.footer-logo {
+  width: 10rem;
+}
+.footer-bussiness {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-copyright-box {
+  display: flex;
+  color: var(--grey-font-color);
+}
+.footer-bussiness-list {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0.5rem;
+  gap: 1rem;
+  color: var(--grey-font-color);
+  font-size: 1.3rem;
+}
+.footer-bussiness-list li {
+  cursor: pointer;
+}
+/* Recipes */
+
+.header-recipes {
+  background-color: #f7f7f7;
+  max-height: 8rem;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 39rem;
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+}
+.header-recipes-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.recipe-coupon,
+.market-price {
+  background-color: var(--coupon-bg);
+  padding: 0.4rem 0;
+  border-radius: 0.5rem;
+}
+.recipe-coupon {
+  width: 70%;
+}
+.recipe-promotion,
+.market-promotion {
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+.recipe-promotion {
+  color: var(--coupon);
+}
+.main-title-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+}
+.main-title-more,
+.header-clean,
+.order-data-preview-link {
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.section-subtitle .main {
+  font-weight: 400;
+}
+/* Creator */
+.creators-card-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.creator-card {
+  width: 15rem;
+  height: 20.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(206, 206, 206, 0.5);
+}
+.creater-image {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+.creator-details {
+  display: flex;
+  padding: 0.3rem 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.creator-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.creator-subtitle {
+  font-size: 1.05rem;
+}
+/* Markets */
+.top-section-market-recipe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+.market-promotion {
+  color: var(--coupon);
+  background-color: var(--coupon-bg);
+}
+.market-price.best {
+  background-color: var(--best-price-bg);
+  color: var(--best-price);
+}
+/* bag */
+.header-recipes-cart {
+  background-color: #f7f7f7;
+  max-height: 5rem;
+
+  gap: 1rem;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 39rem;
+  overflow: hidden;
+  position: relative;
+}
+.header-recipes-cart .header-recipes-box {
+  display: flex;
+  justify-content: space-between;
+}
+.order-info {
+  display: flex;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 1rem;
+}
+.order-info-tab {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.8rem;
+}
+.order-address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.order-info-tab.inative {
+  color: #a6a5a8;
+  border-bottom: none;
+}
+.order-address-box {
+  display: flex;
+  gap: 1rem;
+}
+.order-address-image {
+  border-radius: 0.1px;
+}
+.order-data-preview {
+  display: flex;
+  justify-content: space-between;
+}
+.order-slide-status-container {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+.order-slide-status-box {
+  max-width: 50%;
+  min-width: 45%;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(113, 113, 113, 0.1);
+}
+.order-slide-status-box.active {
+  border: 2px solid var(--primary);
+}
+.order-slide-status-box.active .market-name {
+  color: red;
+}
+.delivery-price {
+  text-transform: capitalize;
+}
+.order-slide-status-box.active .delivery-price {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.delivery-time {
+  font-size: 1rem;
+  color: #5a5a5a;
+}
+.market-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #3e3e3e;
+}
+.order-description-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3e3e3e;
 }

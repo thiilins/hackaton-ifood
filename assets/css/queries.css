@@ -1,0 +1,15 @@
+@media (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+  .header-div-img {
+    max-width: 5rem;
+  }
+  .top-header-div-img-box {
+  max-width: 5rem;
+  max-height: 7.7rem;
+  border-radius: 50%;
+  background-color: var(--market);
+  cursor: pointer;
+}
+}

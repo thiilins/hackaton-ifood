@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iFood Receitas</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+    <header class="modal">
+        <section class="header-recipes-cart">
+            <div class="header-recipes-box">
+                <i class="header-recipes-icon"></i>
+                <h1 class="header-recipes-title">Sacola</h1>
+                <p class="header-clean">Limpar</p>
+            </div>
+        </section>
+    </header>
+      
+    <main class="order-info-container">
+        <section class="order-info-box">
+            <div class="order-info">
+                <p class="order-info-tab">Entrega</p>
+                <p class="order-info-tab inative">Retirada</p>
+            </div>
+        </section>
+        <section class="order-address-container">
+            <div class="order-address-box">
+                <img class="order-address-image" src="./assets/img/UI/map.png" alt="">
+                <div class="order-address">
+                    <span class="delivery-type">Entregar em</span>
+                    <p class="street-name"street-name">Rua 7, 55</p>
+                    <span class="Address-line-2">Maraponga • Bloco 7 apto 202</span>
+                    <i class="icon-order"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="order-data-preview">
+                <p class="section-title">Hoje, entre 18-19hrs</p>
+                <p class="order-data-preview-link">Ver horários</p>
+            </div>
+            <div class="order-slide-status-container">
+                <div class="order-slide-status-box active">
+                    <p class="market-name">Padrão</p>
+                    <i class="question"></i>
+                    <span class="market-delivery-time">Hoje, entre 18-19hrs</span>
+                    <p class="delivery-price">Entrega grátis</p>
+                </div>
+                <div class="order-slide-status-box">
+                    <p class="market-name">Entrega agendada</p>
+                    <i class="question"></i>
+                    <span class="delivery-time">Hoje, entre 19-20hrs</span>
+                    <p class="delivery-price">Entrega grátis</p>
+                </div>
+                <div class="order-slide-status-box">
+                    <p class="market-name">Entrega agendada</p>
+                    <i class="question"></i>
+                    <span class="market-delivery-time">Sab, entre 10-11hrs</span>
+                    <p class="delivery-price">Entrega grátis</p>
+                </div>
+            </div> 
+        </section>
+        <section class="market-info-box">
+            <div class="market-info">
+                <img 
+                src="./assets/img/market/market-02.jpg" 
+                alt="" class="market-logo-image">
+                <p class="market-name-title">Carrefour</p>
+            </div>
+        </section>
+        <section order="order-ingredients-container">
+            <div class="order-paylist">
+                <div class="order-description">
+                    <p class="order-description-title">Ingredientes do Bolo de Chocolate</p>
+                    <p class="order-description-title">Proteínas</p>
+                </div>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x caixa com 8 ovos Regina promoção leve 8 pague 4</p>
+                        <p class="size">500g</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$10,25</p>
+                        <i class="burger"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="order-paylist">
+                <p class="order-tips">Doces e sobremesas</p>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x chocolate em Pó Solúvel Dr. Oetker Decoração</p>
+                        <p class="size">200g</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$9,99</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-9%</p>
+                            <p class="descount-inicial">R$10,00</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="order-tips">Frios e Laticínios</p>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x Margarina Sabor MAnteiga com Sal Vigor</p>
+                        <p class="size">500g</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$7,19</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-32%</p>
+                            <p class="descount-inicial">R$10,50</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="order-tips">Promoções</p>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x Farinha de Trigo Dona Benta sem Fermento Pacote 1kg</p>
+                        <p class="size">1kg</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$5,19</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-25%</p>
+                            <p class="descount-inicial">R$6,60</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x Fermento químico Dr. Oetker em Pó Pote 100g</p>
+                        <p class="size">100g</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$3,49</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-9%</p>
+                            <p class="descount-inicial">R$5,49</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="order-tips">Alimentos Básicos</p>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x Açúcar Demerara Orgânico Carrefour 1kg</p>
+                        <p class="size">1kg</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$4,29</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-19%</p>
+                            <p class="descount-inicial">R$5,29</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="order-tips">Leites e Iogurtes</p>
+                <div class="order-recipe">
+                    <div class="order-recipe-ingredients">
+                        <p class="ingredients">1x Leite Integral Itambé Caixa 1l</p>
+                        <p class="size">1l</p>
+                    </div>
+                    <div class="order-price-box">
+                        <p class="order-price">R$4,99</p>
+                        <i class="burger"></i>
+                        <div class="discount-box">
+                            <p class="descount-percentage">-9%</p>
+                            <p class="descount-inicial">R$5,40</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-items">Adicionar mais itens</p>
+            </div>
+        </section>
+        <section class="order-total-box">
+            <div class="order-total">
+                <div class="order-subtotal-box">
+                    <p class="market-delivery-time">Subtotal</p>
+                    <p class="market-delivery-time">Taxa de entrega</p>
+                    <p class="market-name">Total</p>
+                </div>
+                <div class="order-subtotal-box">
+                    <p class="market-delivery-time">R$51,33</p>
+                    <p class="market-delivery-time green">Entrega Grátis</p>
+                    <p class="market-name">41,13</p>
+                </div>
+            </div>
+        </section>
+        <section class="ticket-">
+
+        </section>
+    </main>
+        <div class="ticket-box">
+            <i class="ticket"></i>
+            <p class="market-name">Cupom</p>
+            <span class="market-delivery-time">3 cupons disponíveis</span>
+            <i class="icon-order"></i>
+        </div>
+        <div class="payment">
+            <p class="way-payment">Forma de pagamento</p>
+            <span class="order-data-preview-link">Escolher</span>
+        </div>
+        <div class="payment">
+            <div class="cpf-cnpj">
+                <p class="way-payment">CPF / CNPJ na nota</p>
+                <span class="market-delivery-time">Campo obrigatório</span>
+            </div>
+        </div>
+          <div class="button">
+            <button type="button" class="button-rent">
+                Agendar pedido
+            </button>
+        </div>
+    </header>
+    </body>
+  </body>
+  </html>
