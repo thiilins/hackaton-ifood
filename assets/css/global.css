@@ -220,6 +220,9 @@ section {
   width: 5rem;
   border-radius: 50%;
 }
+.recipe-logo-image {
+  height: 5rem;
+}
 .market-name,
 .delivery-type-name,
 .recipe-name,
