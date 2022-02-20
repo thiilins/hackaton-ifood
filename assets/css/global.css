@@ -41,7 +41,7 @@ body {
 }
 #container {
   background-color: #ffff;
-  width: 420px;
+  width: 421px;
   height: 100vh;
   overflow-y: scroll;
   box-shadow: 0.6rem 0.6rem 1rem rgba(95, 10, 10, 0.986);
