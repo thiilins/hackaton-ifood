@@ -38,6 +38,7 @@
             alt="#"
           />
         </div>
+        <!-- menu-header -->
         <nav class="header-nav-category">
           <ul>
             <li class="header-category-menu-item market-mini">
@@ -60,6 +61,7 @@
             </li>
           </ul>
         </nav>
+        <!--  END -->
         <div class="header-div-address-box">
           <span> Entregar em</span>
           <div class="header-div-address">
@@ -542,16 +544,22 @@
       const marketSlide = new Swiper(".slide-section-markets-container", {
         direction: "horizontal",
         loop: true,
-        slidesPerView: "auto",
+        slidesPerView: 1.5,
         spaceBetween: 15,
       });
 
       const topMarketSlide = new Swiper(".top-market-list", {
+        direction: "horizontal",
         slidesPerView: 2.5,
         grid: {
           rows: 2,
         },
       });
+
+      //Animation
+
+      const dropDownMenu = documen
+
     </script>
   </body>
 </html>
