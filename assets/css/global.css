@@ -39,13 +39,12 @@ body {
 }
 #container {
   background-color: #ffff;
-  width: 39rem;
+  width: 390px;
   height: 100vh;
   overflow-y: scroll;
   box-shadow: 0.6rem 0.6rem 1rem rgba(95, 10, 10, 0.986);
   scrollbar-width: thin;
   position: relative;
-  border-radius: 3rem;
 }
 #container::-webkit-scrollbar {
   width: 5px;
@@ -706,11 +705,10 @@ section {
 .main-menu-box {
   position: fixed;
   bottom: 0;
-  width: 39rem;
+  width: inherit;
   padding: 1rem;
   background: white;
   z-index: 999;
-  border-radius: 0 0 3rem 3rem;
 }
 .main-menu {
   display: flex;

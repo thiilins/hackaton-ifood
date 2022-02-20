@@ -13,3 +13,8 @@
     cursor: pointer;
   }
 }
+@media (max-width: 389px) {
+  #container {
+    width: 100%;
+  }
+}
