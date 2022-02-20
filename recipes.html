@@ -34,28 +34,24 @@
         <h1 class="header-recipes-title">Receitas</h1>
       </header>
       <aside class="main-menu-box">
-        <nav class="main-menu">
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Início</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Buscar</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Pedidos</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Perfil</p>
-            </i>
-          </div>
-        </nav>
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <i class="fa-solid fa-house fa-icon"></i>
+            <p class="main-menu-text">Início</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-solid fa-magnifying-glass fa-icon"></i>
+            <p class="main-menu-text">Buscar</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="order-icon icon"></i>
+            <p class="main-menu-text">Pedidos</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-regular fa-user fa-icon"></i>
+            <p class="main-menu-text">Perfil</p>
+          </li>
+        </ul>
       </aside>
       <main class="main-container">
         <section class="main-box">
@@ -150,40 +146,42 @@
               Sugestão dos melhores cozinheiros do Brasil
             </span>
           </div>
-          <div class="creators-card-container">
-            <div class="creator-card">
-              <img
-                src="./assets/img/creators/paola_carosella.jpg"
-                alt=""
-                class="creater-image"
-              />
-              <div class="creator-details">
-                <p class="creator-name">Paola Carossela</p>
-                <span class="creator-subtitle">
-                  Chef, empresária e Youtuber
-                </span>
+          <div class="swiper creators-card-container">
+            <div class="swiper-wrapper">
+              <div class="creator-card swiper-slide">
+                <img
+                  src="./assets/img/creators/paola_carosella.jpg"
+                  alt=""
+                  class="creater-image"
+                />
+                <div class="creator-details">
+                  <p class="creator-name">Paola Carossela</p>
+                  <span class="creator-subtitle">
+                    Chef, empresária e Youtuber
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="creator-card">
-              <img
-                src="./assets/img/creators/mohamad_hindi.jpg"
-                alt=""
-                class="creater-image"
-              />
-              <div class="creator-details">
-                <p class="creator-name">Mohamad Hindi</p>
-                <span class="creator-subtitle"> Chef e Youtuber </span>
+              <div class="creator-card swiper-slide">
+                <img
+                  src="./assets/img/creators/mohamad_hindi.jpg"
+                  alt=""
+                  class="creater-image"
+                />
+                <div class="creator-details">
+                  <p class="creator-name">Mohamad Hindi</p>
+                  <span class="creator-subtitle"> Chef e Youtuber </span>
+                </div>
               </div>
-            </div>
-            <div class="creator-card">
-              <img
-                src="./assets/img/creators/leonardo_abreu.jpg"
-                alt=""
-                class="creater-image"
-              />
-              <div class="creator-details">
-                <p class="creator-name">Leonardo Abreu</p>
-                <span class="creator-subtitle"> Chef e Youtuber </span>
+              <div class="creator-card swiper-slide">
+                <img
+                  src="./assets/img/creators/leonardo_abreu.jpg"
+                  alt=""
+                  class="creater-image"
+                />
+                <div class="creator-details">
+                  <p class="creator-name">Leonardo Abreu</p>
+                  <span class="creator-subtitle"> Chef e Youtuber </span>
+                </div>
               </div>
             </div>
           </div>
@@ -191,8 +189,14 @@
       </main>
     </div>
 
-    <script src="./assets/js/script.js"></script>
-    <!-- SwiperJS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const creatorSlide = new Swiper(".creators-card-container", {
+        loop: true,
+        direction: "horizontal",
+        slidesPerView: "auto",
+        spaceBetween: 5,
+      });
+    </script>
   </body>
 </html>

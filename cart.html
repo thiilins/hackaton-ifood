@@ -38,7 +38,26 @@
           </div>
         </section>
       </header>
-
+      <aside class="main-menu-box">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <i class="fa-solid fa-house fa-icon"></i>
+            <p class="main-menu-text">Início</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-solid fa-magnifying-glass fa-icon"></i>
+            <p class="main-menu-text">Buscar</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="order-icon icon"></i>
+            <p class="main-menu-text">Pedidos</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-regular fa-user fa-icon"></i>
+            <p class="main-menu-text">Perfil</p>
+          </li>
+        </ul>
+      </aside>
       <main class="order-info-container">
         <section class="order-info-box">
           <div class="order-info">
@@ -65,27 +84,32 @@
             <p class="section-title">Hoje, entre 18-19hrs</p>
             <p class="order-data-preview-link">Ver horários</p>
           </div>
-          <div class="order-slide-status-container">
-            <div class="order-slide-status-box active">
-              <p class="delivery-type-name">Padrão <i class="help-icon"></i></p>
-              <i class="question"></i>
-              <span class="market-delivery-time">Hoje, entre 18-19hrs</span>
-              <p class="delivery-price">Entrega grátis</p>
-            </div>
-            <div class="order-slide-status-box">
-              <p class="delivery-type-name">
-                Entrega agendada <i class="help-icon"></i>
-              </p>
-              <span class="delivery-time">Hoje, entre 19-20hrs</span>
-              <p class="delivery-price">Entrega grátis</p>
-            </div>
-            <div class="order-slide-status-box">
-              <p class="delivery-type-name">
-                Entrega agendada <i class="help-icon"></i>
-              </p>
-              <i class="question"></i>
-              <span class="market-delivery-time">Sab, entre 10-11hrs</span>
-              <p class="delivery-price">Entrega grátis</p>
+
+          <div class="swiper order-slide-status-container">
+            <div class="swiper-wrapper">
+              <div class="order-slide-status-box active swiper-slide">
+                <p class="delivery-type-name">
+                  Padrão <i class="help-icon"></i>
+                </p>
+                <i class="question"></i>
+                <span class="market-delivery-time">Hoje, entre 18-19hrs</span>
+                <p class="delivery-price">Entrega grátis</p>
+              </div>
+              <div class="order-slide-status-box swiper-slide">
+                <p class="delivery-type-name">
+                  Entrega agendada <i class="help-icon"></i>
+                </p>
+                <span class="delivery-time">Hoje, entre 19-20hrs</span>
+                <p class="delivery-price">Entrega grátis</p>
+              </div>
+              <div class="order-slide-status-box swiper-slide">
+                <p class="delivery-type-name">
+                  Entrega agendada <i class="help-icon"></i>
+                </p>
+                <i class="question"></i>
+                <span class="market-delivery-time">Sab, entre 10-11hrs</span>
+                <p class="delivery-price">Entrega grátis</p>
+              </div>
             </div>
           </div>
         </section>
@@ -257,5 +281,13 @@
         <button type="button" class="button-rent">Agendar pedido</button>
       </div>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const deliveryDate = new Swiper(".order-slide-status-container", {
+        direction: "horizontal",
+        slidesPerView: "auto",
+        spaceBetween: 5,
+      });
+    </script>
   </body>
 </html>

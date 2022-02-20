@@ -30,7 +30,6 @@ h3 {
   text-transform: uppercase;
 }
 body {
-  max-width: 39rem;
   max-height: 84.4rem;
   margin: 0 auto;
   background-image: url(../img/bg.jpg);
@@ -41,6 +40,7 @@ body {
 }
 #container {
   background-color: #ffff;
+  width: 39rem;
   height: 100vh;
   overflow-y: scroll;
   align-self: center;
@@ -103,6 +103,7 @@ section {
   width: 100%;
   max-width: 39rem;
   overflow: hidden;
+  z-index: 9999;
 }
 .top-header-div-img-box {
   max-width: 4rem;
@@ -134,11 +135,11 @@ section {
 .header-nav-category {
   display: none;
 }
-.top-category-menu ul {
+.top-category-menu {
   display: flex;
   overflow: hidden;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .top-category-menu-item {
   display: flex;
@@ -361,6 +362,7 @@ section {
   overflow: hidden;
   justify-content: center;
   position: relative;
+  z-index: 9999;
 }
 .header-recipes .fa-chevron-left {
   align-self: flex-start;
@@ -478,6 +480,7 @@ section {
   max-width: 39rem;
   overflow: hidden;
   position: relative;
+  z-index: 9999;
 }
 .header-recipes-cart .header-recipes-box {
   display: flex;
@@ -697,6 +700,7 @@ section {
   width: 38rem;
   padding: 1rem;
   background: white;
+  z-index: 9999;
 }
 .main-menu {
   display: flex;
@@ -744,7 +748,7 @@ section {
   content: "";
   display: block;
   position: absolute;
-  right: -16px;
+  right: -16\px;
   top: 10px;
   min-width: 0.8rem;
   min-height: 2rem;

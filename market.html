@@ -11,7 +11,14 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="./assets/css/queries.css" />
@@ -21,96 +28,106 @@
     />
   </head>
   <body>
-      <div id="container">
-    <header class="header-recipes">
+    <div id="container">
+      <header class="header-recipes">
         <i class="fa-solid fa-chevron-left"></i>
         <h1 class="header-recipes-title">Mercados</h1>
-    </header>
-    <aside class="main-menu-box">
-      <nav class="main-menu">
-        <div class="main-menu-item">
-          <i class="main-menu-icon">
+      </header>
+      <aside class="main-menu-box">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <i class="fa-solid fa-house fa-icon"></i>
             <p class="main-menu-text">Início</p>
-          </i>
-        </div>
-        <div class="main-menu-item">
-          <i class="main-menu-icon">
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-solid fa-magnifying-glass fa-icon"></i>
             <p class="main-menu-text">Buscar</p>
-          </i>
-        </div>
-        <div class="main-menu-item">
-          <i class="main-menu-icon">
+          </li>
+          <li class="main-menu-item">
+            <i class="order-icon icon"></i>
             <p class="main-menu-text">Pedidos</p>
-          </i>
-        </div>
-        <div class="main-menu-item">
-          <i class="main-menu-icon">
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-regular fa-user fa-icon"></i>
             <p class="main-menu-text">Perfil</p>
-          </i>
-        </div>
-      </nav>
-    </aside>
-    <main class="main-market-container">
-      <section class="main-box">
-        <div class="main-title-container">
-          <div class="main-title-box">
-            <h2 class="section-title">Seu bolo de chocolate está aqui</h2>
-          <p class="main-title-more">Ver mais</p>
-               </div>   
-               <span class="section-subtitle main"
-            > Veja o supermercado com o melhor preço e mais próximo de você </span
-          >
-        </div>
-      </section>
-      <section class="top-section-market-recipe-container">
-        <div class="top-section-market-box">
-          <img class="market-logo-image" 
-          src="./assets/img/market/market-02.jpg" 
-          alt="logotipo Carrefour" />
-          <p class="market-name">Carrefour</p>
-          <span class="market-delivery-time">Hoje, entre 18h-19h</span>
-            <div class="market-price best"><p class="market-promotion green">Suas compras: R$41,12</p></div>
-        </div>
-        <div class="top-section-market-box">
-          <img
-            class="market-logo-image"
-            src="./assets/img/market/market-18.jpg"
-            alt="logotipo Supermercados Big"
-          />
-          <p class="market-name">Supermercados Big</p>
-          <span class="market-delivery-time">40-60 min</span>
-          <div class="market-price">
-            <p class="market-promotion">Suas compras: R$42,35</p>
+          </li>
+        </ul>
+      </aside>
+      <main class="main-market-container">
+        <section class="main-box">
+          <div class="main-title-container">
+            <div class="main-title-box">
+              <h2 class="section-title">Seu bolo de chocolate está aqui</h2>
+              <p class="main-title-more">Ver mais</p>
+            </div>
+            <span class="section-subtitle main">
+              Veja o supermercado com o melhor preço e mais próximo de você
+            </span>
           </div>
-        </div>
-        <div class="top-section-market-box">
-          <img
-            class="market-logo-image"
-            src="./assets/img/market/market-03.jpg"
-            alt="logotipo Carrefour Market"
-          />
-          <p class="market-name">Peri Supermercados</p>
-          <span class="market-delivery-time">35-45 min</span>
-           <div class="market-price"> <p class="market-promotion">Suas compras: R$46,16</p></div>
-        </div>
-        <div class="top-section-market-box">
-          <img
-            class="market-logo-image"
-            src="./assets/img/market/market-13.jpg"
-            alt="Logotipo Extra"
-          />
-          <p class="market-name">Extra</p>
-          <span class="market-delivery-time">Segunda, entre 14h-18h</span>
-            <div class="market-price"><p class="market-promotion">Suas compras: R$47,20</p></div>
-        </div>
-        <div class="top-section-market-box">
-            <img class="market-logo-image"
-            src="./assets/img/market/market-05.jpg"
-            alt="Logotipo Supermercado Aliança" />
+        </section>
+        <section class="top-section-market-recipe-container">
+          <div class="top-section-market-box">
+            <img
+              class="market-logo-image"
+              src="./assets/img/market/market-02.jpg"
+              alt="logotipo Carrefour"
+            />
+            <p class="market-name">Carrefour</p>
+            <span class="market-delivery-time">Hoje, entre 18h-19h</span>
+            <div class="market-price best">
+              <p class="market-promotion green">Suas compras: R$41,12</p>
+            </div>
+          </div>
+          <div class="top-section-market-box">
+            <img
+              class="market-logo-image"
+              src="./assets/img/market/market-18.jpg"
+              alt="logotipo Supermercados Big"
+            />
+            <p class="market-name">Supermercados Big</p>
+            <span class="market-delivery-time">40-60 min</span>
+            <div class="market-price">
+              <p class="market-promotion">Suas compras: R$42,35</p>
+            </div>
+          </div>
+          <div class="top-section-market-box">
+            <img
+              class="market-logo-image"
+              src="./assets/img/market/market-03.jpg"
+              alt="logotipo Carrefour Market"
+            />
+            <p class="market-name">Peri Supermercados</p>
+            <span class="market-delivery-time">35-45 min</span>
+            <div class="market-price">
+              <p class="market-promotion">Suas compras: R$46,16</p>
+            </div>
+          </div>
+          <div class="top-section-market-box">
+            <img
+              class="market-logo-image"
+              src="./assets/img/market/market-13.jpg"
+              alt="Logotipo Extra"
+            />
+            <p class="market-name">Extra</p>
+            <span class="market-delivery-time">Segunda, entre 14h-18h</span>
+            <div class="market-price">
+              <p class="market-promotion">Suas compras: R$47,20</p>
+            </div>
+          </div>
+          <div class="top-section-market-box">
+            <img
+              class="market-logo-image"
+              src="./assets/img/market/market-05.jpg"
+              alt="Logotipo Supermercado Aliança"
+            />
             <p class="market-name">Supermercado Aliança</p>
             <span class="market-delivery-time">40-60 min</span>
-           <div class="market-price"> <p class="market-promotion">Suas compras: R$46,16</p></div>
+            <div class="market-price">
+              <p class="market-promotion">Suas compras: R$46,16</p>
+            </div>
           </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
