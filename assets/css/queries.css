@@ -6,10 +6,13 @@
     max-width: 5rem;
   }
   .top-header-div-img-box {
-  max-width: 5rem;
-  max-height: 7.7rem;
-  border-radius: 50%;
-  background-color: var(--market);
-  cursor: pointer;
-}
+    max-width: 5rem;
+    max-height: 7.7rem;
+    border-radius: 50%;
+    background-color: var(--market);
+    cursor: pointer;
+  }
+  body {
+    margin: 0 3rem;
+  }
 }

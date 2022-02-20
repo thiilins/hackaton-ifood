@@ -12,6 +12,13 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="./assets/css/queries.css" />
@@ -63,28 +70,24 @@
         </div>
       </header>
       <aside class="main-menu-box">
-        <nav class="main-menu">
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Início</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Buscar</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Pedidos</p>
-            </i>
-          </div>
-          <div class="main-menu-item">
-            <i class="main-menu-icon">
-              <p class="main-menu-text">Perfil</p>
-            </i>
-          </div>
-        </nav>
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <i class="fa-solid fa-house fa-icon"></i>
+            <p class="main-menu-text">Início</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-solid fa-magnifying-glass fa-icon"></i>
+            <p class="main-menu-text">Buscar</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="order-icon icon"></i>
+            <p class="main-menu-text">Pedidos</p>
+          </li>
+          <li class="main-menu-item">
+            <i class="fa-regular fa-user fa-icon"></i>
+            <p class="main-menu-text">Perfil</p>
+          </li>
+        </ul>
       </aside>
       <main>
         <nav class="top-category-menu">
@@ -479,14 +482,18 @@
           </ul>
         </section>
         <section class="footer-social-media">
-          <img src="" alt="Logotipo Facebook" />
-          <img src="" alt="Logotipo Twitter" />
-          <img src="" alt="Logotipo YouTube" />
-          <img src="" alt="Logotipo Instagram" />
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-twitter-square"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
         </section>
         <section class="footer-bussiness">
           <div class="footer-copyright-box">
-            <img class="footer-logo" src="" alt="" />
+            <img
+              class="footer-logo"
+              src="./assets/img/UI/footer-logo.png"
+              alt=""
+            />
             <div class="footer-copyright">
               <p>
                 © Copyright 2021 - iFood - Todos os direitos reservados iFood

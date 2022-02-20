@@ -36,18 +36,17 @@ body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-color: var(--primary);
+  background-position: center center;
   display: flex;
-  padding: 1rem;
 }
 #container {
-  border-radius: 3rem;
   background-color: #ffff;
-  height: 95vh;
+  height: 100vh;
   overflow-y: scroll;
   align-self: center;
-  /* border: 1.2rem solid rgb(0, 0, 0); */
   box-shadow: 0.6rem 0.6rem 1rem rgba(95, 10, 10, 0.986);
   scrollbar-width: thin;
+  position: relative;
 }
 #container::-webkit-scrollbar {
   width: 5px;
@@ -132,8 +131,7 @@ section {
   font-weight: 400;
   font-size: 1.2rem;
 }
-.header-nav-category,
-.main-menu-box {
+.header-nav-category {
   display: none;
 }
 .top-category-menu ul {
@@ -218,7 +216,8 @@ section {
 .market-name,
 .recipe-name,
 .street-name,
-.delivery-price {
+.delivery-price,
+.default-title {
   color: #1a1a1a;
   font-size: 1.2rem;
   font-weight: 500;
@@ -226,7 +225,10 @@ section {
 .market-delivery-time,
 .recipe-delivery-time,
 .delivery-type,
-.Address-line-2 {
+.Address-line-2,
+.order-delivery-price,
+.order-subtotal-price,
+.order-total-price {
   color: var(--font-color);
   font-size: 1rem;
 }
@@ -351,14 +353,22 @@ section {
   max-height: 8rem;
   display: flex;
   gap: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   position: sticky;
   top: 0;
   width: 100%;
-  max-width: 39rem;
   overflow: hidden;
   justify-content: center;
   position: relative;
+}
+.header-recipes .fa-chevron-left {
+  align-self: flex-start;
+  position: absolute;
+  left: 1rem;
+}
+.fa-chevron-left {
+  color: red;
+  font-size: 1.5rem;
 }
 .header-recipes-title {
   font-size: 1.3rem;
@@ -368,20 +378,30 @@ section {
 .recipe-coupon,
 .market-price {
   background-color: var(--coupon-bg);
-  padding: 0.4rem 0;
+  padding: 0.4rem;
   border-radius: 0.5rem;
 }
 .recipe-coupon {
-  width: 70%;
+  width: 90%;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
 .recipe-promotion,
 .market-promotion {
   font-size: 1.05rem;
   font-weight: 700;
-  padding-left: 1rem;
 }
 .recipe-promotion {
   color: var(--coupon);
+}
+.recipe-title-box {
+  display: flex;
+  justify-content: space-between;
+}
+.recipe-title-box .fa-heart {
+  font-size: 1.5rem;
+  color: var(--grey-font-color);
 }
 .main-title-box {
   display: flex;
@@ -390,6 +410,7 @@ section {
 }
 .main-title-more,
 .header-clean,
+.add-item,
 .order-data-preview-link {
   color: var(--primary);
   font-size: 1.2rem;
@@ -448,9 +469,8 @@ section {
 .header-recipes-cart {
   background-color: #f7f7f7;
   max-height: 5rem;
-
   gap: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   position: sticky;
   top: 0;
   width: 100%;
@@ -531,8 +551,178 @@ section {
   font-size: 1.8rem;
   color: #3e3e3e;
 }
-.order-description-title {
+.order-ingredients-container {
+  padding: 2rem;
+}
+.order-tips {
   font-size: 1.3rem;
+  padding: 0.6rem 0;
   font-weight: 700;
   color: #3e3e3e;
+}
+.order-recipe {
+  display: flex;
+  justify-content: space-between;
+}
+.order-paylist,
+.order-description,
+.order-recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.ingredients {
+  width: 75%;
+  font-size: 1.3rem;
+}
+.size {
+  font-size: 1.2rem;
+  color: var(--grey-font-color);
+}
+.order-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.discount-box {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.descount-percentage {
+  color: white;
+  background-color: var(--best-price);
+  padding: 0.2rem 0.4rem;
+  min-width: 3.5rem;
+  border-radius: 0.5rem;
+}
+.descount-inicial {
+  color: var(--grey-font-color);
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.add-items-btn {
+  align-self: center;
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.order-total {
+  display: flex;
+  justify-content: space-between;
+}
+.order-total * {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.order-subtotal-box.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.order-delivery-price.free {
+  color: var(--best-price);
+}
+.order-subtotal-price {
+  color: var(--grey-color);
+}
+.coupon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.coupon-container .fa-ticket {
+  font-size: 3rem;
+  color: var(--grey-color);
+}
+
+.default-title {
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+
+.default-subtitle {
+  color: var(--grey-color);
+  font-size: 1rem;
+}
+.payment {
+}
+.cpf-cnpj-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cpf-cnpj {
+  font-size: 1.35rem;
+}
+.cpf-cnpj-box .default-subtitle {
+  font-size: 1.2rem;
+}
+.payment-method {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.button-rent {
+  width: 95%;
+  color: white;
+  background: var(--primary);
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+/* Main Menu */
+.main-menu-box {
+  position: fixed;
+  bottom: 0;
+  width: 38rem;
+  padding: 1rem;
+  background: white;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu .icon {
+  color: var(--grey-font-color);
+  font-size: 2rem;
+}
+.main-menu .icon {
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.order-icon {
+  background-image: url(../img/UI/order-icon.svg);
+}
+.search-icon {
+  background-image: url(../img/UI/search-icon.svg);
+}
+.main-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.fa-icon {
+  font-size: 2rem;
+}
+.footer-social-media {
+  font-size: 3rem;
+  color: var(--grey-color);
+}
+.footer-logo {
+  width: 6rem;
+  height: auto;
+  padding: 0 0.3rem;
 }
