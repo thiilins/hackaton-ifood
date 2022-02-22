@@ -3,7 +3,7 @@
 
 &#xa0;
 
-<a href="ifood-receitas.surge.sh">Demo</a>
+<a href="https://ifood-receitas.surge.sh">Demo</a>
 
 </div>
 
