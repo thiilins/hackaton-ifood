@@ -4,7 +4,7 @@
 
 </div>
 
-# hackaton-ifood
+# Hack Ifood - 3ª Edição
 
 <div align="center">
 
