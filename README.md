@@ -1,110 +1,81 @@
-<div align="center" id="top"> 
-  <img src="./.github/cover.png" alt="Hack_ifood" />
-
-&#xa0;
-
-<a href="https://ifood-receitas.surge.sh">Demo</a>
+<div align="center" id="top">
+  
+[🇧🇷 Português](./README.md) | [🇺🇸 English](./README_EN.md) | [🇪🇸 Español](./README_ES.md)
 
 </div>
 
-<h1 align="center">Hack_ifood</h1>
+# hackaton-ifood
 
-<p align="center">
-  <!-- <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/thiilins/hack_ifood?color=56BEB8">
+<div align="center">
 
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/thiilins/hack_ifood?color=56BEB8">
+![Capa do Projeto](./.github/cover.png)
 
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/thiilins/hack_ifood?color=56BEB8">
+[Ver Demonstração](https://ifood-receitas.surge.sh)
 
-<img alt="Licença" src="https://img.shields.io/github/license/thiilins/hack_ifood?color=56BEB8"> -->
+![Linguagem Principal](https://img.shields.io/github/languages/top/thiilins/hackaton-ifood?style=for-the-badge&color=FF5858)
+![Linguagens Utilizadas](https://img.shields.io/github/languages/count/thiilins/hackaton-ifood?style=for-the-badge&color=FF5858)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/thiilins/hackaton-ifood?style=for-the-badge&color=FF5858)
+![Licença](https://img.shields.io/github/license/thiilins/hackaton-ifood?style=for-the-badge&color=FF5858)
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/thiilins/hack_ifood?color=56BEB8" /> -->
+</div>
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/thiilins/hack_ifood?color=56BEB8" /> -->
+## 📖 Índice
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/thiilins/hack_ifood?color=56BEB8" /> -->
-</p>
+<div align="center">
+    <a href="#-sobre-o-projeto">Sobre o Projeto</a> | 
+    <a href="#-funcionalidades">Funcionalidades</a> | 
+    <a href="#-tecnologias">Tecnologias</a> | 
+    <a href="#-instalação-e-uso">Instalação e Uso</a> | 
+    <a href="#-licença">Licença</a> | 
+    <a href="#-participantes">Participantes</a> | 
+</div>
 
-<!-- Status -->
+## 📘 Sobre o Projeto
 
-<!-- <h4 align="center">
-	🚧  Hack_ifood 🚀 Em construção...  🚧
-</h4>
+Para apaixonados por gastronomia e apreciadores de boas receitas, que precisam de um acesso rápido a ingredientes de qualidade e melhor preço, o iFood Receitas é um produto, que pode ser aplicado dentro do ecossistema do iFood ou em qualquer outro lugar, que proporciona uma jornada de compra mais rápida, incluindo todos os ingredientes de uma receita ao carrinho com apenas 1 clique. Diferentemente de outros aplicativos, o iFood Receitas torna a experiência de compra mais prazerosa, rápida e com os melhores preços dos mercados. [Assista nosso Pitch](https://www.youtube.com/watch?v=eWLXuaZF-ho).
 
-<hr> -->
-
-<p align="center">
-  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
-  <a href="#sparkles-durante-o-hack-ifood-implementamos">implementamos</a> &#xa0; | &#xa0;
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-pré-requisitos">Pré requisitos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
-   <a href="#raised_hand-participantes" target="_blank">Participantes</a> &#xa0; | &#xa0;
-   <a href="#memo-licença">Licença</a>
-
-</p>
-
-<br>
-
-## :dart: Sobre
-
-Para apaixonados por gastronomia e apreciadores de boas receitas,
-que precisam de um acesso rápido a ingredientes de qualidade e melhor preço,
-o iFood Receitas é um produto, que pode ser aplicado dentro do ecossistema do iFood
-ou em qualquer outro lugar, que proporciona uma jornada de compra mais rápida,
-incluindo todos os ingredientes de uma receita ao carrinho com apenas 1 clique.
-
-Diferentemente de outros aplicativos, o iFood Receitas torna a experiência de compra
-mais prazerosa, rápida e com os melhores preços dos mercados.
-
-[Assista nosso Pitch](https://www.youtube.com/watch?v=eWLXuaZF-ho)
-
-## :sparkles: Durante o Hack iFood implementamos:
+## 🚀 Funcionalidades
 
 - O código da interface do ifood produzida nas linguagens HTML, CSS e JS;
 - Lógica de animação das telas e slides;
 - Nova função desenvolvida pelo time chamada "Receitas";
 - Caminhos para chegar aos pedidos e compra.
 
-## :rocket: Tecnologias
+## 🛠 Tecnologias
 
-#### Durante o projeto, para prototipação e simulação da ideia foram utilizadas as tecnologias a seguir:
+Durante o projeto, para prototipação e simulação da ideia foram utilizadas:
 
-    - HTML
-    - CSS
-    - JavaScript
-    - SwiperJS
+- HTML
+- CSS
+- JavaScript
+- SwiperJS
 
 #### Futuro:
 
-    - ReactJS
-    - React Native
-    - NodeJS/Python
+- ReactJS
+- React Native
+- NodeJS/Python
+- AI (IBM Watson/Google Duplex) - Fazer análise da receita e comparar com o catálogo dos supermercados/restaurantes indicando a melhor opção com base nos gostos do consumidor.
+- Crawler - Fará a indexação das receitas via web.
+- Fornecer uma API que conectará os serviços aos nossos servidores podendo assim atender diversos players e soluções.
 
-    - AI (IBM Watson/Google Duplex) - Fazer análise da receita e comparar com o catalogo dos supermercados/restaurantes
-      indicando a melhor opção com base nos gostos do consumidor.
-
-    - Crawler - Fará a indexação das receitas via web.
-
-    - Fornecer uma api que conectará os serviços aos nossos servidores podendo assim atender diversos players e soluções.
-
-## :white_check_mark: Pré requisitos
-
-- Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) instalado em seu computador
-
-## :checkered_flag: Começando
+## 🚀 Instalação e Uso
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/thiilins/hack_ifood
+# Clone este repositório:
+$ git clone https://github.com/thiilins/hackaton-ifood
 
-# Entre na pasta
-$ cd hack_ifood
-#iniciar o live server
+# Entre na pasta:
+$ cd hackaton-ifood
+# Iniciar o live server:
 # O app vai inicializar em <http://localhost:5500>
 ```
 
-## :raised_hand: Participantes
+## 📜 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais detalhes.
+
+## 🤝 Participantes
 
 - [Pedro Lucas Lopes Paraguai](https://github.com/PedroLucasLopes)
 - [Thiago Lins](https://github.com/thiilins)
@@ -112,12 +83,5 @@ $ cd hack_ifood
 - [Luadyna Almeida](https://www.linkedin.com/in/luadyna-almeida/)
 - Bruna Lopes
 
-## :memo: Licença
-
-Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
-Feito com :heart: por <a href="https://github.com/thiilins" target="_blank">Thiago Lins</a>
-
-&#xa0;
-
-<a href="#top">Voltar para o topo</a>
+Feito com ❤️ por [Thiago Lins](https://github.com/thiilins).
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
